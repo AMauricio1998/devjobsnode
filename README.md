@@ -17,3 +17,11 @@
 - Filtrado de vacantes
 - Listado de vacantes disponibles con numero de postulaciones
 
+![Inicio](/capturas/captura%20(8).png)
+![Inicio](/capturas/captura%20(1).png)
+![Inicio](/capturas/captura%20(2).png)
+![Inicio](/capturas/captura%20(3).png)
+![Inicio](/capturas/captura%20(4).png)
+![Inicio](/capturas/captura%20(5).png)
+![Inicio](/capturas/captura%20(6).png)
+![Inicio](/capturas/captura%20(7).png)
