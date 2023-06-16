@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,8 +19,8 @@
         
         {{#if barra}}
             <div class="buscador">
-                <form action="#">
-                    <input type="text" class="buscar">
+                <form action="/buscador" method="POST">
+                    <input type="text" class="buscar" name="q">
                     <input type="submit" value="Buscar">
                 </form>
             </div>

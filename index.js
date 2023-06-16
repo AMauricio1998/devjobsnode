@@ -9,6 +9,7 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo');
 const bodyParser = require('body-parser');
 const expressValidator = require('express-validator');
+const createError = require('http-errors');
 const flash = require('connect-flash');
 const passport = require('./config/passport')
 
@@ -55,4 +56,22 @@ app.use((req, res, next) => {
 
 app.use('/', router());
 
-app.listen(process.env.PORT);
+app.use((req, res, next) => {
+    next(createError(404, 'Pagina no encontrada'))
+})
+
+app.use((error, req, res, next) => {
+    res.locals.mensaje = error.message
+    const status = error.status || 500
+    res.locals.status = status
+    res.status(status)
+    res.render('error')
+})
+
+// app.listen(process.env.PORT);
+const host = '0.0.0.0'
+const port = process.env.PORT;
+
+app.listen(port, host, () => {
+    console.log('El servidor esta funcionando')
+})

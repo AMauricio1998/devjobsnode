@@ -216,7 +216,7 @@ exports.buscarVacantes = async (req, res) => {
         $text : {
             $search : req.body.q
         }
-    });
+    }).lean();
 
     // mostrar las vacantes
     res.render('home', {
