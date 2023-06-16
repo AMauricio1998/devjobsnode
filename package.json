@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./index",
-    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\" ",
-    "start": "node ./index.js",
+    "start": "concurrently \"npm run dev\" \"npm run watch\" ",
     "watch": "webpack --watch --mode development"
   },
   "author": "Alan Mauricio Reyes Telesforo",
